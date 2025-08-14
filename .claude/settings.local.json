@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(dotnet --version)",
+      "Bash(dotnet new:*)",
+      "Bash(dotnet add package:*)",
+      "Bash(dotnet sln:*)",
+      "Bash(dotnet add reference:*)",
+      "Bash(dotnet ef migrations:*)",
+      "Bash(dotnet build)",
+      "Bash(dotnet run:*)",
+      "Bash(pkill:*)",
+      "Bash(taskkill:*)",
+      "Bash(cmd /c:*)",
+      "Bash(wmic:*)",
+      "Bash(dotnet:*)",
+      "Bash(ls:*)"
+    ],
+    "deny": []
+  }
+}

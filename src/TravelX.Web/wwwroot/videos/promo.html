@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel-X Promotional Video</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .promo-container {
+            width: 100%;
+            max-width: 1200px;
+            aspect-ratio: 16/9;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .promo-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .headline {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .subheadline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .feature h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cta {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .cta:hover {
+            transform: scale(1.05);
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4ecdc4;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="promo-container">
+        <div class="promo-content">
+            <div class="logo">Travel-X</div>
+            <h1 class="headline">The Future of Travel is Here</h1>
+            <p class="subheadline">Revolutionizing how you book travel with hotel owner partnerships</p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">70%</div>
+                    <div class="stat-label">Hotel Owner Share</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">25%</div>
+                    <div class="stat-label">Investor Share</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">5%</div>
+                    <div class="stat-label">Founder Share</div>
+                </div>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>For Travelers</h3>
+                    <p>Curated experiences, direct partnerships, comprehensive booking</p>
+                </div>
+                <div class="feature">
+                    <h3>For Hotel Owners</h3>
+                    <p>Majority ownership, premium distribution, revenue sharing</p>
+                </div>
+                <div class="feature">
+                    <h3>For Investors</h3>
+                    <p>High growth opportunity, governance rights, multiple revenue streams</p>
+                </div>
+            </div>
+            
+            <button class="cta">Join the Revolution</button>
+        </div>
+    </div>
+
+    <script>
+        // This would be replaced with actual video content
+        console.log('Travel-X Promotional Video Template');
+    </script>
+</body>
+</html>

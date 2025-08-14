@@ -1,0 +1,43 @@
+<div class="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4 transition-opacity duration-300 @ModalClass"
+     @onclick="CloseModal">
+    <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-hidden transform transition-all duration-300 @ModalContentClass"
+         @onclick:stopPropagation>
+        <div class="flex items-center justify-between p-4 border-b">
+            <h3 class="text-lg font-semibold text-gray-900">Travel-X Revolution</h3>
+            <button @onclick="CloseModal" 
+                    class="text-gray-400 hover:text-gray-600 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="aspect-video bg-black">
+            <video controls autoplay class="w-full h-full" poster="/images/video-poster.jpg">
+                <source src="/videos/travel-x-promo.mp4" type="video/mp4">
+                <source src="/videos/travel-x-promo.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <div class="p-4 bg-gray-50">
+            <p class="text-sm text-gray-600">
+                Discover how Travel-X is revolutionizing the travel industry with hotel owner partnerships, 
+                premium distribution, and revenue sharing across multiple verticals.
+            </p>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public bool IsOpen { get; set; }
+    [Parameter] public EventCallback<bool> IsOpenChanged { get; set; }
+
+    private string ModalClass => IsOpen ? "opacity-100" : "opacity-0 pointer-events-none";
+    private string ModalContentClass => IsOpen ? "scale-100" : "scale-95";
+
+    private async Task CloseModal()
+    {
+        await IsOpenChanged.InvokeAsync(false);
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "travel-x",
+  "version": "1.0.0",
+  "description": "Travel-X - The Future of Travel Booking",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/TravelX.Web/wwwroot/css/app.css -o ./src/TravelX.Web/wwwroot/css/output.css --watch",
+    "build-prod": "tailwindcss -i ./src/TravelX.Web/wwwroot/css/app.css -o ./src/TravelX.Web/wwwroot/css/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38"
+  }
+}
